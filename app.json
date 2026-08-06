@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "QRDrop",
+    "slug": "qrdrop",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "qrdrop",
+    "splash": {
+      "backgroundColor": "#f5f7fb"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "QRDrop uses the camera to scan the animated QR codes shown on the other phone."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#3366ff"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "QRDrop uses the camera to scan the animated QR codes shown on the other phone."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
