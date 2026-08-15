@@ -1,15 +1,15 @@
 // QRDrop theme — carried over directly from the Reko design system so the two
-// apps feel like one family: Manrope everywhere, a single blue accent, a calm
+// apps feel like one family: Manrope everywhere, a single orange accent, a calm
 // canvas, and quiet ink-toned text. One font family, used at different weights.
 
 export const colors = {
-  // Reko blue — the single accent that carries the brand.
-  brand50: "#eef4ff",
-  brand100: "#d9e6ff",
-  brand500: "#3366ff",
-  brand600: "#1f4ff5",
-  brand700: "#173de1",
-  brand900: "#1a338f",
+  // QRDrop orange — the single accent that carries the brand (#ff7900).
+  brand50: "#fff4ec",
+  brand100: "#ffe0c7",
+  brand500: "#ff7900",
+  brand600: "#ef6c00",
+  brand700: "#cc5b00",
+  brand900: "#7a3a00",
 
   // Ink — text tones from strong to faint.
   ink: "#0d1220",
@@ -21,11 +21,12 @@ export const colors = {
   white: "#ffffff",
   line: "#e7eaf1",
 
-  // Semantic tones, used sparingly.
+  // Semantic tones, used sparingly. Warnings lean red so they never read as the
+  // orange brand accent.
   ok: "#0f9d6a",
-  warn: "#e0603a",
-  warnSoftBg: "#fff3ee",
-  warnSoftText: "#b23c1a",
+  warn: "#d92d20",
+  warnSoftBg: "#fef3f2",
+  warnSoftText: "#b42318",
 };
 
 // One font family. Weight, not typeface, carries hierarchy.

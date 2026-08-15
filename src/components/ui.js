@@ -81,7 +81,7 @@ export function Chip({ label, tone = "neutral" }) {
   );
 }
 
-// --- WhyNote (Reko's signature soft-blue info note) ------------------------
+// --- WhyNote (signature soft-accent info note) -----------------------------
 export function WhyNote({ children }) {
   return (
     <View style={styles.why}>

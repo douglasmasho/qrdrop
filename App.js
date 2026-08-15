@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ScrollView, StatusBar, StyleSheet, View } from "react-native";
+import { Image, ScrollView, StatusBar, StyleSheet, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import {
   useFonts,
@@ -44,10 +44,12 @@ export default function App() {
       <SafeAreaView style={styles.safe} edges={["top", "left", "right"]}>
         <StatusBar barStyle="dark-content" backgroundColor={colors.canvas} />
         <View style={styles.header}>
-          <View>
-            <T variant="h1">QRDrop</T>
-            <T variant="small" tone="muted">Phone to phone, no internet</T>
-          </View>
+          <Image
+            source={require("./assets/wordmark.png")}
+            style={styles.logo}
+            resizeMode="contain"
+          />
+          <T variant="small" tone="muted" style={styles.tagline}>Phone to phone, no internet</T>
         </View>
 
         <View style={styles.tabsWrap}>
@@ -77,7 +79,9 @@ export default function App() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.canvas },
   splash: { flex: 1, backgroundColor: colors.canvas },
-  header: { paddingHorizontal: 20, paddingTop: 8, paddingBottom: 4 },
+  header: { paddingHorizontal: 20, paddingTop: 10, paddingBottom: 4 },
+  logo: { width: 132, height: 34 },
+  tagline: { marginTop: 5 },
   tabsWrap: { paddingHorizontal: 20, paddingTop: 12 },
   body: { padding: 20, paddingBottom: 40 },
 });

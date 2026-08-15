@@ -6,8 +6,11 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "scheme": "qrdrop",
+    "icon": "./assets/icon.png",
     "splash": {
-      "backgroundColor": "#f5f7fb"
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -23,8 +26,12 @@
         "CAMERA"
       ],
       "adaptiveIcon": {
-        "backgroundColor": "#3366ff"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff7900"
       }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       [
